@@ -118,10 +118,42 @@ def runAddTwoNumbers():
     print("Output: " + listToString(linkedListToList(out)))
 
 
+def lengthOfLongestSubstring(s: str) -> int:
+    length = 0
+    candidate = ""
+    candLen = 0
+    for i, char in enumerate(s):
+        if char not in candidate:
+            candidate += char
+            candLen += 1
+        else:
+            if candLen > length:
+                length = candLen
+            while char in candidate:
+                candLen -= 1
+                candidate = candidate[1:]
+            candidate += char
+            candLen += 1
+    return candLen if candLen > length else length
+
+
+def runLengthOfLongestSubstring():
+    s = "abcabcbb"
+    print("String: " + s)
+    print("Length of longest substring: {:d}".format(lengthOfLongestSubstring(s)))
+    s = "bbbbb"
+    print("String: " + s)
+    print("Length of longest substring: {:d}".format(lengthOfLongestSubstring(s)))
+    s = "pwwkew"
+    print("String: " + s)
+    print("Length of longest substring: {:d}".format(lengthOfLongestSubstring(s)))
+
+
 def main():
     # Two Sum
     runTwoSum()
     runAddTwoNumbers()
+    runLengthOfLongestSubstring()
 
 
 if __name__ == "__main__":
