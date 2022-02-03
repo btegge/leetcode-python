@@ -3,6 +3,7 @@ from lengthOfLongestSubstring import lengthOfLongestSubstring
 from addTwoNumbers import addTwoNumbers
 from findMedianSortedArrays import findMedianSortedArrays
 from longestPalindrome import longestPalindrome
+from zigzagConversion import convert
 from typing import List
 from ListNode import ListNode
 
@@ -127,3 +128,16 @@ def runLongestPalindrome():
     print("Input: " + s)
     print("Output: " + longestPalindrome(1, s))
     print()
+
+
+def runZigzagConversion():
+    s = "PAYPALISHIRING"
+    numRows = 3
+    print("Input String: " + s)
+    print("Input numRows: {:d}".format(numRows))
+    print("Output: " + convert(s, numRows))
+    s = "PAYPALISHIRING"
+    numRows = 4
+    print("Input String: " + s)
+    print("Input numRows: {:d}".format(numRows))
+    print("Output: " + convert(s, numRows))

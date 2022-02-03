@@ -12,6 +12,8 @@ def main():
     runFindMedianSortedArrays()
     print("longestPalindrome Solution:")
     runLongestPalindrome()
+    print("ZigzagConversion Solution:")
+    runZigzagConversion()
 
 
 if __name__ == "__main__":
