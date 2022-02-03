@@ -6,6 +6,7 @@ from longestPalindrome import longestPalindrome
 from zigzagConversion import convert
 from reverseInteger import reverse
 from stringToInteger import myAtoi
+from regularExpressionMatching import isMatch
 from typing import List
 from ListNode import ListNode
 
@@ -179,3 +180,21 @@ def runStringToInteger():
     s = "4193 with words"
     print("Input: " + s)
     print("Output: {:d}".format(myAtoi(s)))
+
+
+def runRegularExpressionMatching():
+    s = "aa"
+    p = "a"
+    print("Input string: " + s)
+    print("Input pattern: " + p)
+    print("Output: ", isMatch(s, p))
+    s = "aa"
+    p = "a*"
+    print("Input string: " + s)
+    print("Input pattern: " + p)
+    print("Output: ", isMatch(s, p))
+    s = "ab"
+    p = ".*"
+    print("Input string: " + s)
+    print("Input pattern: " + p)
+    print("Output: ", isMatch(s, p))

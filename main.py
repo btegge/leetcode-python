@@ -18,6 +18,8 @@ def main():
     runReverseInteger()
     print("StringToInteger Solution:")
     runStringToInteger()
+    print("RegularExpressionMatching Solution:")
+    runRegularExpressionMatching()
 
 
 if __name__ == "__main__":
