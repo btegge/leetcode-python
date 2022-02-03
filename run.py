@@ -4,6 +4,7 @@ from addTwoNumbers import addTwoNumbers
 from findMedianSortedArrays import findMedianSortedArrays
 from longestPalindrome import longestPalindrome
 from zigzagConversion import convert
+from reverseInteger import reverse
 from typing import List
 from ListNode import ListNode
 
@@ -141,3 +142,27 @@ def runZigzagConversion():
     print("Input String: " + s)
     print("Input numRows: {:d}".format(numRows))
     print("Output: " + convert(s, numRows))
+
+
+def runReverseInteger():
+    x = 123
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(0, x)))
+    x = -123
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(0, x)))
+    x = -123
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(1, x)))
+    x = 120
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(0, x)))
+    x = 901000
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(1, x)))
+    x = 0
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(1, x)))
+    x = 1534236469
+    print("Input: {:d}".format(x))
+    print("Output: {:d}".format(reverse(1, x)))

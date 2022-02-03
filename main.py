@@ -14,6 +14,8 @@ def main():
     runLongestPalindrome()
     print("ZigzagConversion Solution:")
     runZigzagConversion()
+    print("ReverseInteger Solution:")
+    runReverseInteger()
 
 
 if __name__ == "__main__":
