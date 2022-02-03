@@ -16,6 +16,8 @@ def main():
     runZigzagConversion()
     print("ReverseInteger Solution:")
     runReverseInteger()
+    print("StringToInteger Solution:")
+    runStringToInteger()
 
 
 if __name__ == "__main__":

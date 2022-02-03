@@ -5,6 +5,7 @@ from findMedianSortedArrays import findMedianSortedArrays
 from longestPalindrome import longestPalindrome
 from zigzagConversion import convert
 from reverseInteger import reverse
+from stringToInteger import myAtoi
 from typing import List
 from ListNode import ListNode
 
@@ -166,3 +167,15 @@ def runReverseInteger():
     x = 1534236469
     print("Input: {:d}".format(x))
     print("Output: {:d}".format(reverse(1, x)))
+
+
+def runStringToInteger():
+    s = "42"
+    print("Input: " + s)
+    print("Output: {:d}".format(myAtoi(s)))
+    s = "   -42"
+    print("Input: " + s)
+    print("Output: {:d}".format(myAtoi(s)))
+    s = "4193 with words"
+    print("Input: " + s)
+    print("Output: {:d}".format(myAtoi(s)))
