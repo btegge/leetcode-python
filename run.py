@@ -2,6 +2,7 @@ from twoSum import twoSum
 from lengthOfLongestSubstring import lengthOfLongestSubstring
 from addTwoNumbers import addTwoNumbers
 from findMedianSortedArrays import findMedianSortedArrays
+from longestPalindrome import longestPalindrome
 from typing import List
 from ListNode import ListNode
 
@@ -52,12 +53,12 @@ def runTwoSum():
     print("Target: {:d}".format(target))
     out = twoSum(0, inList, target)
     print("Output: " + listToString(out))
+    print()
 
 
 def runAddTwoNumbers():
     l1 = [2, 4, 3]
     l2 = [5, 6, 4]
-    print("addTwoNumbers Solution:")
     print("List1: " + listToString(l1))
     print("List2: " + listToString(l2))
     out = addTwoNumbers(makeLinkedList(l1), makeLinkedList(l2))
@@ -65,11 +66,11 @@ def runAddTwoNumbers():
 
     l1 = [9, 9, 9, 9, 9, 9, 9]
     l2 = [9, 9, 9, 9]
-    print("addTwoNumbers Solution:")
     print("List1: " + listToString(l1))
     print("List2: " + listToString(l2))
     out = addTwoNumbers(makeLinkedList(l1), makeLinkedList(l2))
     print("Output: " + listToString(linkedListToList(out)))
+    print()
 
 
 def runLengthOfLongestSubstring():
@@ -82,6 +83,7 @@ def runLengthOfLongestSubstring():
     s = "pwwkew"
     print("String: " + s)
     print("Length of longest substring: {:d}".format(lengthOfLongestSubstring(s)))
+    print()
 
 
 def runFindMedianSortedArrays():
@@ -96,3 +98,32 @@ def runFindMedianSortedArrays():
     print("Array1: " + listToString(nums1))
     print("Array2: " + listToString(nums2))
     print("Median: {:f}".format(findMedianSortedArrays(1, nums1, nums2)))
+    print()
+
+
+def runLongestPalindrome():
+    s = "babad"
+    print("Input: " + s)
+    print("Output: " + longestPalindrome(0, s))
+    s = "cbbd"
+    print("Input: " + s)
+    print("Output: " + longestPalindrome(0, s))
+    s = "a"
+    print("Input: " + s)
+    print("Output: " + longestPalindrome(0, s))
+    s = "bb"
+    print("Input: " + s)
+    print("Output: " + longestPalindrome(0, s))
+    s = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" \
+        "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    print("Input: " + s)
+    print("Output: " + longestPalindrome(1, s))
+    print()
