@@ -7,6 +7,8 @@ from zigzagConversion import convert
 from reverseInteger import reverse
 from stringToInteger import myAtoi
 from regularExpressionMatching import isMatch
+from containerWithMostWater import maxArea
+from integerToRoman import intToRoman
 from typing import List
 from ListNode import ListNode
 
@@ -198,3 +200,40 @@ def runRegularExpressionMatching():
     print("Input string: " + s)
     print("Input pattern: " + p)
     print("Output: ", isMatch(s, p))
+
+
+def runContainerWithMostWater():
+    height = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+    print("Height: " + listToString(height))
+    print("Output: ", maxArea(height));
+    height = [1, 1]
+    print("Height: " + listToString(height))
+    print("Output: ", maxArea(height));
+
+
+def runIntegerToRoman():
+    num = 1
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 3
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 10
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 40
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 50
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 58
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 100
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+    num = 365
+    print("Num: ", num)
+    print("Output: " + intToRoman(num))
+

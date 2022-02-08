@@ -20,6 +20,10 @@ def main():
     runStringToInteger()
     print("RegularExpressionMatching Solution:")
     runRegularExpressionMatching()
+    print("ContainerWithMostWater Solution:")
+    runContainerWithMostWater()
+    print("IntegerToRoman Solution:")
+    runIntegerToRoman()
 
 
 if __name__ == "__main__":
