@@ -9,6 +9,7 @@ from stringToInteger import myAtoi
 from regularExpressionMatching import isMatch
 from containerWithMostWater import maxArea
 from integerToRoman import intToRoman
+from romanToInteger import romanToInt
 from typing import List
 from ListNode import ListNode
 
@@ -237,3 +238,13 @@ def runIntegerToRoman():
     print("Num: ", num)
     print("Output: " + intToRoman(num))
 
+def runRomanToInteger():
+    num = "III"
+    print("Num: " + num)
+    print("Output: ", romanToInt(num))
+    num = "LVIII"
+    print("Num: " + num)
+    print("Output: ", romanToInt(num))
+    num = "MCMXCIV"
+    print("Num: " + num)
+    print("Output: ", romanToInt(num))

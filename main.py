@@ -24,6 +24,8 @@ def main():
     runContainerWithMostWater()
     print("IntegerToRoman Solution:")
     runIntegerToRoman()
+    print("RomanToInteger Solution:")
+    runRomanToInteger()
 
 
 if __name__ == "__main__":
